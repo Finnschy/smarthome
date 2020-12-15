@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: Galien;
+    src: url(../fonts/Galien-Bold.otf);
+}
+
+:root {
+    --main-text-color: #1F3F68;
+    --main-headline: 'Galien', 'Times New Roman', Times, serif;
+    --header-bg-gradient: linear-gradient(0deg, rgba(152,195,232,1) 0%, rgba(255,255,255,0) 50%);
+    --button-color: #5A98D0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-text-color);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3, h4 {
+    font-family: var(--main-headline);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    line-height: 1.625rem;
+    opacity: .6;
+}
+
+.indexHeader {
+    min-height: 80vh;
+    background: var(--header-bg-gradient);
+    display: flex;
+    justify-content: center;
+}
+
+.indexHeader section {
+    width: 30%;
+    padding-top: 8rem;
+}
+
+.indexHeader section p {
+    margin: 2rem 0;
+}
+
+button {
+    background: var(--button-color);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.938rem 3rem;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.blogContactHeader {
+    background: url(../img/contactheader.png) center / cover no-repeat;
+    padding: 4rem 0;
+}
+
+.blogContactHeader h2 , .blogContactHeader p{
+    text-align: center;
+}
+
+.blogContactHeader h2 {
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+}
+
+.blogContactHeader p {
+    color: #fff;
+    opacity: .4;
+}
+
+input[type=search] {
+    border: none;
+    background: #F4F4F4;
+}
+
+input[type=search]:focus {
+    outline: none;
+}
+
+::placeholder, .fa-search {
+    color: var(--main-text-color);
+    opacity: .6;
+}
+
+.fa-search {
+    margin-right: 1rem;
+}
+
+#blogSearch {
+    background: #F4F4F4;
+    width: 60%;
+    margin: 5rem auto;
+    padding: 1.25rem 2rem;
+    border-radius: 10px;
+}
